@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+}
+
+#body {
+  background: linear-gradient(to bottom, #00c2cb 0%, #ffffff 100%);
+}
+
+#container {
+  margin-top: 10%;
+}
+
+#headline {
+  color: #00c2cb;
+}
+
+.form-control {
+  font-family: FontAwesome, Helvetica, Arial, sans-serif; 
+  font-style: normal;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+#name-input::placeholder, 
+#email-input::placeholder,
+#password-input::placeholder {
+  color: rgb(183, 183, 183);
+  background-color: rgb(244, 244, 244);
+  
+  /* Firefox */
+  opacity: 1; 
+}
+
+/* Change the white to any color */
+input:-webkit-autofill
+{
+ -webkit-box-shadow: 0 0 0 30px #e0feff inset !important;
+}
+
+#name-input.form-control,
+#email-input.form-control,
+#password-input.form-control {
+  background-color: rgb(244, 244, 244);
+  border-color: rgb(244, 244, 244);
+  height: 60px;
+}
+
+#name-input.form-control:focus,
+#email-input.form-control:focus,
+#password-input.form-control:focus {
+  box-shadow: 0 0 0 0.2rem #00c2cb;
+} 
+
+#sign-in-button,
+#sign-up-button {
+  background-color: #00c2cb;
+  border-color: #00c2cb;
+  height: 50px;
+}
