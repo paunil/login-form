@@ -20,11 +20,19 @@
     class="container col-sm-8 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center bg-white p-5"
   >
     <!-- Headline -->
-    <h3 id="headline" class="mb-0">Login</h3>
+    <h3 id="headline" class="mb-0">Create Account</h3>
 
 
     <!-- Input fields -->
     <div id="input-container" class="w-100 my-5">
+      <div class="form-group">
+        <input
+          id="name-input"
+          type="text"
+          class="form-control" 
+          placeholder="&#xf007; &nbsp; Name"
+        >
+      </div>
   
       <div class="form-group">
         <input
@@ -35,13 +43,22 @@
           placeholder="&#xf0e0; &nbsp; E-mail"
         >
       </div>
-  
-      <div class="form-group mb-0">
+
+      <div class="form-group">
         <input 
           id="password-input"
           type="password" 
           class="form-control" 
-          placeholder="&#xf023; &nbsp; Password"
+          placeholder="&#xf13e; &nbsp; Password"
+        >
+      </div>
+  
+      <div class="form-group">
+        <input 
+          id="confirm-password-input"
+          type="password" 
+          class="form-control" 
+          placeholder="&#xf023; &nbsp; Confirm password"
         >
       </div>
     </div>
@@ -56,7 +73,7 @@
         <button 
           id="sign-in-button"
           type="submit" 
-          class="btn btn-info w-100 colored-button"
+          class="btn btn-info w-100 uncolored-button"
           onclick="location.href='/index.html'"
         >
           SIGN IN
@@ -66,7 +83,7 @@
         <button 
           id="sign-up-button"
           type="button"
-          class="btn btn-info w-100 uncolored-button"
+          class="btn btn-info w-100 colored-button"
           onclick="location.href='/sign-up.html'"
         >
           SIGN UP
