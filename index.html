@@ -25,25 +25,35 @@
 
     <!-- Input fields -->
     <div id="input-container" class="w-100 my-5">
-  
-      <div class="form-group">
-        <input
-          id="email-input"
-          type="email" 
-          class="form-control" 
-          aria-describedby="emailHelp"
-          placeholder="&#xf0e0; &nbsp; E-mail"
-        >
-      </div>
-  
-      <div class="form-group mb-0">
-        <input 
-          id="password-input"
-          type="password" 
-          class="form-control" 
-          placeholder="&#xf023; &nbsp; Password"
-        >
-      </div>
+      <form
+        id="input-form"
+        action="/login"
+        method="POST"
+        class="was-validated"
+      >
+        <div class="form-group">
+          <input
+            id="email-input"
+            type="email"
+            name="email"
+            class="form-control" 
+            aria-describedby="emailHelp"
+            placeholder="&#xf0e0; &nbsp; E-mail"
+            required
+          >
+        </div>
+    
+        <div class="form-group mb-0">
+          <input 
+            id="password-input"
+            type="password" 
+            name="p"
+            class="form-control" 
+            placeholder="&#xf023; &nbsp; Password"
+            required
+          >
+        </div>
+      </form>
     </div>
     
 
@@ -57,7 +67,7 @@
           id="sign-in-button"
           type="submit" 
           class="btn btn-info w-100 colored-button"
-          onclick="location.href='/index.html'"
+          form="input-form"
         >
           SIGN IN
         </button>
